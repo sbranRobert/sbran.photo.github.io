@@ -86,11 +86,14 @@ body {
 
 .content.news {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
 .content.news .twitter-timeline {
     max-width: 60% !important;
+    width: 100% !important;
 }
 
 .content .intro {
