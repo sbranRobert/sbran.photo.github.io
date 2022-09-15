@@ -14,11 +14,29 @@
                 </ul>
             </div>
         </nav>
-        <div class="content news">
+        <div id="loading">
+            <span class="loader"></span>
+        </div>
+        <div class="content news" id="loaded">
             <a class="twitter-timeline"
                href="https://twitter.com/sbran_photo?ref_src=twsrc%5Etfw"></a>
         </div>
-        <script src="https://platform.twitter.com/widgets.js" charset="utf-8">
+
+        <script>
+            !function(d,s,id) {
+                let js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = p+"://platform.twitter.com/widgets.js";
+                    js.setAttribute('onload', "twttr.events.bind('rendered',function(e) {loaded()});");
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document,"script","twitter-wjs");
+            function loaded() {
+                document.getElementById('loading').style.visibility = 'hidden';
+                document.getElementById('loading').style.display = 'none';
+            }
         </script>
     </body>
 </html>
