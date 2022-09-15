@@ -35,7 +35,7 @@ body {
     color: #b45f33;
 }
 
-.menu a.active {
+.menu .active {
     color: #ff6a29;
 }
 
