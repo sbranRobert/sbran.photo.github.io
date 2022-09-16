@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(246, 245, 241);
+    background-color: #f6f5f1;
     font-family: monospace;
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 #home .menu a {
-    color: rgb(246, 245, 241);
+    color: #f6f5f1;
 }
 
 .menu a:hover {
@@ -121,6 +121,21 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.content #home-screen {
+    text-align: center;
+}
+
+.content #home-screen #galery-link {
+    color: #f6f5f1;
+    text-align: center;
+    width: 16em;
+    height: 4em;
+    outline: solid;
+    background-color: unset;
+    border-style: none;
+    cursor: pointer;
 }
 
 .content #home-screen img {
