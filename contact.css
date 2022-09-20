@@ -6,7 +6,7 @@
 
 #contact .content .network {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
@@ -17,11 +17,10 @@
     margin-top: 2em;
 }
 
-#twitter, #twitch, #insta {
-    max-width: 30%;
+#twitter, #twitch, #insta, #flickr {
+    max-width: 100px;
 }
 
 .network .logo {
     width: 100%;
-    max-width: 150px;
 }

@@ -17,6 +17,11 @@
     color: black;
 }
 
+.type-menu li:hover {
+   color: #b45f33;
+   cursor: pointer;
+}
+
 .type-menu li#type-menu-active {
     color: #ff6a29;
 }
