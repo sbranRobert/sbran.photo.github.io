@@ -1,0 +1,28 @@
+#home .menu a {
+    color: #f6f5f1;
+}
+
+.content #home-screen {
+    text-align: center;
+}
+
+.content #home-screen #galery-link {
+    color: #f6f5f1;
+    text-align: center;
+    width: 16em;
+    height: 4em;
+    outline: solid;
+    background-color: unset;
+    border-style: none;
+    cursor: pointer;
+}
+
+.content #home-screen img {
+    height: 100vh;
+     width: 100vw;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}

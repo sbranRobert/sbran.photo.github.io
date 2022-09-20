@@ -1,0 +1,15 @@
+.content .intro {
+    display: flex;
+    flex-direction: row;
+}
+
+.content .intro img {
+    border-radius: 50%;
+    align-self: center;
+    object-fit: cover;
+}
+
+.content .intro .me {
+    text-align: end;
+    margin-left: 10em;
+}

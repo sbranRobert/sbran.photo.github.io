@@ -12,11 +12,6 @@ body {
     font-size: large;
 }
 
-.logo {
-    display: flex;
-    width: fit-content;
-}
-
 .menu {
     display: flex;
     width: 100%;
@@ -31,10 +26,6 @@ body {
     color: #000000;
 }
 
-#home .menu a {
-    color: #f6f5f1;
-}
-
 .menu a:hover {
     color: #b45f33;
 }
@@ -43,45 +34,9 @@ body {
     color: #ff6a29;
 }
 
-
-.pictures-grid {
+.logo {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.pictures-grid .picture {
-    display: flex;
-    width: 25vw;
-    padding-top: 2em;
-    align-self: center;
-}
-
-.pictures-grid .picture img {
-    max-width: 100%;
-    cursor: pointer;
-}
-
-#popup {
-    visibility: hidden;
-    opacity: 0;
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    text-align: center;
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-@keyframes fadeOut {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
+    width: fit-content;
 }
 
 .content {
@@ -95,85 +50,27 @@ body {
     align-items: center;
 }
 
-.content.news .twitter-timeline {
+@media only screen and (max-width: 768px) {
+  [class*="twitter-timeline"] {
     max-width: 80% !important;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  [class*="twitter-timeline"] {
+    max-width: 60% !important;
+  }
+}
+
+.content.news .twitter-timeline {
+    
     width: 100% !important;
-}
-
-.content .intro {
-    display: flex;
-    flex-direction: row;
-}
-
-.content .intro img {
-    border-radius: 50%;
-    align-self: center;
-    object-fit: cover;
-}
-
-.content .intro .me {
-    text-align: end;
-    margin-left: 10em;
 }
 
 .content.flickr {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-}
-
-.content #home-screen {
-    text-align: center;
-}
-
-.content #home-screen #galery-link {
-    color: #f6f5f1;
-    text-align: center;
-    width: 16em;
-    height: 4em;
-    outline: solid;
-    background-color: unset;
-    border-style: none;
-    cursor: pointer;
-}
-
-.content #home-screen img {
-    height: 100vh;
-     width: 100vw;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-}
-
-#contact .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#contact .content .network {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    margin-top: 2em;
-}
-
-#contact .content #email {
-    margin-top: 2em;
-}
-
-#twitter, #twitch, #insta {
-    max-width: 30%;
-}
-
-.network .logo {
-    width: 100%;
-    max-width: 150px;
 }
 
 #loading {

@@ -2,6 +2,7 @@
     <head>
         <title>TreborKaa Portolio's</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="galery.css">
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
@@ -17,28 +18,31 @@
                 </ul>
             </div>
         </nav>
-        <div class="content flickr">
-<!--            <div class="flickr-album">-->
-<!--                <a data-flickr-embed="true" data-context="true" href="https://www.flickr.com/photos/187510591@N08" title="">-->
-<!--                    <img src="https://live.staticflickr.com/65535/51922807445_91ec53ee16_z.jpg" width="100%" alt="">-->
-<!--                </a>-->
-<!--            </div>-->
-            <label for="type-select">Type de photo :</label>
-            <select id="type-select">
-                <option value="animals">Animalier</option>
-                <option value="paysage">Paysage</option>
-            </select>
-            <div class="pictures-grid" id="picture-list">
+        <div class="galery-content">
+            <nav>
+                <div class="vertical-navbar">
+                    <ul class="type-menu">
+                        <li class="type-element" id="type-menu-active" value="paysage">Paysages</li>
+                        <li class="type-element" value="animals">Animaux</li>
+                        <li class="type-element" value="architecture">Architecture</li>
+                        <li class="type-element" value="black-white">Noir et Blanc</li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="content">
+
+                <div class="pictures-grid" id="picture-list">
+                </div>
             </div>
-        </div>
 
-        <div class="popup" id="popup">
+            <div class="popup" id="popup">
 
+            </div>
         </div>
 
         <script type="module" src="scripts/galery.js">
 
         </script>
-        <script async src="https://embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+        <!-- <script async src="https://embedr.flickr.com/assets/client-code.js" charset="utf-8"></script> -->
     </body>
 </html>
